@@ -36,8 +36,8 @@
 
 <script lang="ts">
 import { RadioGroup, RadioGroupDescription, RadioGroupLabel, RadioGroupOption } from "@headlessui/vue";
-import { CheckCircleIcon, ArrowCircleUpIcon, ArrowCircleDownIcon, PlusCircleIcon } from "@heroicons/vue/solid";
-import useCalculations from "@/store/calculations.ts";
+import { CheckCircleIcon, ArrowCircleUpIcon, ArrowCircleDownIcon, PlusCircleIcon } from "@heroicons/vue/solid/index.js";
+import useCalculations from "@/store/calculations";
 import { defineComponent } from "vue";
 
 export default defineComponent({

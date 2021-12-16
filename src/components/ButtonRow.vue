@@ -32,7 +32,7 @@
 </template>
 
 <script lang="ts">
-import { ArrowCircleRightIcon, ArrowCircleLeftIcon, ChartBarIcon } from "@heroicons/vue/solid";
+import { ArrowCircleRightIcon, ArrowCircleLeftIcon, ChartBarIcon } from "@heroicons/vue/solid/index.js";
 import useSteps from "@/store/steps";
 import {defineComponent} from "vue";
 

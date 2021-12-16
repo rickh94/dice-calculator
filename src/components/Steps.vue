@@ -45,7 +45,7 @@
 
 <script lang="ts">
 import useSteps from "../store/steps.ts";
-import {CheckIcon} from "@heroicons/vue/solid";
+import {CheckIcon} from "@heroicons/vue/solid/index.js";
 import {defineComponent} from "vue";
 
 

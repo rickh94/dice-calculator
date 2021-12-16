@@ -33,7 +33,7 @@
 
 <script lang="ts">
 import { RadioGroup, RadioGroupDescription, RadioGroupLabel, RadioGroupOption } from "@headlessui/vue";
-import { CheckCircleIcon, } from "@heroicons/vue/solid";
+import { CheckCircleIcon } from "@heroicons/vue/solid/index.js";
 import D4Icon from "@/components/dice-icons/D4Icon.vue";
 import D6Icon from "@/components/dice-icons/D6Icon.vue";
 import D8Icon from "@/components/dice-icons/D8Icon.vue";

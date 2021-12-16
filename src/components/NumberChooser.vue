@@ -41,7 +41,7 @@
 </template>
 
 <script lang="ts">
-import {ChevronUpIcon, ChevronDownIcon} from "@heroicons/vue/solid";
+import {ChevronUpIcon, ChevronDownIcon} from "@heroicons/vue/solid/index.js";
 import useDice from "@/store/dice.ts";
 import useCalculations from "@/store/calculations.ts";
 import {defineComponent} from "vue";

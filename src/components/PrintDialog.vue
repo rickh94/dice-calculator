@@ -61,7 +61,7 @@
 <script lang="ts">
 import {defineComponent} from 'vue'
 import {Dialog, DialogOverlay, DialogTitle, TransitionChild, TransitionRoot} from '@headlessui/vue'
-import {PrinterIcon} from '@heroicons/vue/outline'
+import {PrinterIcon} from '@heroicons/vue/outline/index.js'
 
 export default defineComponent({
   components: {
