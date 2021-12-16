@@ -10,7 +10,7 @@
                         :key="calc.id"
                         :value="calc"
                         v-slot="{ checked, active }">
-        <div :class="[checked ? 'border-transparent' : 'border-gray-300', active ? 'ring-2 ring-indigo-500' : '', 'relative bg-white border rounded-lg shadow-sm p-4 flex cursor-pointer focus:outline-none']">
+        <div :class="[checked ? 'border-transparent' : 'border-gray-300', active ? 'ring-2 ring-emerald-500' : '', 'relative bg-white border rounded-lg shadow-sm p-4 flex cursor-pointer focus:outline-none']">
           <div class="flex-1 flex">
             <div class="flex flex-col w-full justify-center items-center">
               <RadioGroupLabel as="span" class="block text-sm font-medium text-gray-900">
@@ -25,8 +25,8 @@
               </RadioGroupDescription>
             </div>
           </div>
-          <CheckCircleIcon :class="[!checked ? 'invisible' : '', 'h-5 w-5 text-indigo-600']" aria-hidden="true" />
-          <div :class="[active ? 'border' : 'border-2', checked ? 'border-indigo-500' : 'border-transparent', 'absolute -inset-px rounded-lg pointer-events-none']"
+          <CheckCircleIcon :class="[!checked ? 'invisible' : '', 'h-5 w-5 text-emerald-600']" aria-hidden="true" />
+          <div :class="[active ? 'border' : 'border-2', checked ? 'border-emerald-500' : 'border-transparent', 'absolute -inset-px rounded-lg pointer-events-none']"
                aria-hidden="true" />
         </div>
       </RadioGroupOption>

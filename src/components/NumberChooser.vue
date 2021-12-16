@@ -17,7 +17,7 @@
                :disabled="cannotChangeDice"
         >
         <div class="grid grid-rows-2 grid-cols-1 gap-0 w-20">
-          <button class="rounded-tr-lg bg-transparent border-l border-b border-gray-300 disabled:bg-gray-200 disabled:text-gray-400 focus:bg-indigo-100 active:bg-indigo-200"
+          <button class="rounded-tr-lg bg-transparent border-l border-b border-gray-300 disabled:bg-gray-200 disabled:text-gray-400 focus:bg-emerald-100 active:bg-emerald-200"
                   type="button"
                   title="More Dice"
                   @click="increaseDiceCount"
@@ -25,7 +25,7 @@
           >
             <ChevronUpIcon></ChevronUpIcon>
           </button>
-          <button class="rounded-br-lg bg-transparent border-l border-gray-300 disabled:bg-gray-200 disabled:text-gray-400 focus:bg-indigo-100 active:bg-indigo-200"
+          <button class="rounded-br-lg bg-transparent border-l border-gray-300 disabled:bg-gray-200 disabled:text-gray-400 focus:bg-emerald-100 active:bg-emerald-200"
                   type="button"
                   title="Fewer Dice"
                   @click="decreaseDiceCount"
