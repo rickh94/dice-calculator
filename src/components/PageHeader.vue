@@ -1,7 +1,7 @@
 <template>
   <div class="p-8 shadow print:shadow-none">
-    <div class="md:flex md:items-center md:justify-between">
-      <div class="flex-1 min-w-0 flex items-center gap-2">
+    <div class="flex flex-col items-center justify-center sm:flex sm:flex-row sm:items-center sm:justify-between">
+      <div class="md:flex-1 min-w-0 flex items-center gap-2">
         <main-icon class="h-10"></main-icon>
         <h2 class="text-3xl font-bold leading-7 text-gray-900 sm:text-3xl sm:truncate">
           RPG Dice Calculator

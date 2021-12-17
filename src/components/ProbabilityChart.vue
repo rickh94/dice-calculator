@@ -6,11 +6,12 @@
 
 <script lang="ts">
 import {defineComponent} from 'vue'
-import Chart from 'chart.js/dist/Chart.min.js'
+import pkg from 'chart.js/dist/chart.js';
 import {DiceResult} from '@/calculations/diceOutput';
 import useDice from '@/store/dice';
 import useCalculations, {Calculations} from '@/store/calculations';
 
+const {Chart} = pkg;
 export default defineComponent({
   name: "ProbabilityChart",
   props: {
@@ -77,7 +78,7 @@ export default defineComponent({
               text: "Probability (%)",
             },
             ticks: {
-              callback: function(value, index, values) {
+              callback: function (value, index, values) {
                 return `${value.toFixed(2)} %`;
               }
             }
@@ -95,7 +96,7 @@ export default defineComponent({
           },
           tooltip: {
             callbacks: {
-              label: function(context) {
+              label: function (context) {
                 return `${context.dataset.label}: ${context.parsed.y}%`;
               },
             }
