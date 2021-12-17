@@ -41,14 +41,11 @@ export default defineComponent({
   },
   mounted() {
     const third = this.data.length / 3;
-    // let colors = Array(Math.floor(third)).fill('rgb(225 29 72)');
     const colors = [
       ...Array(Math.ceil(third)).fill('rgb(225 29 72)'),
       ...Array(Math.ceil(third)).fill('rgb(2 132 199)'),
       ...Array(Math.floor(third)).fill('rgb(13 148 136)'),
     ]
-    // colors.push.apply(Array(Math.ceil(third)).fill('rgb(2 132 199)'));
-    // colors.push.apply(Array(Math.floor(third)).fill('rgb(13 148 136)'));
     const chartConfig = {
       type: 'bar',
       data: {
@@ -65,7 +62,6 @@ export default defineComponent({
       },
       options: {
         scales: {
-          display: true,
           x: {
             title: {
               display: true,
