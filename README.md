@@ -1,7 +1,15 @@
-# Vue 3 + Vite
+# Dice Probability Calculator
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+This is the source for my dice probability calculator 
+at [https://rollprobability.com](https://rollprobability.com).
+It takes the user through choosing dice to roll and calculating the
+probability of different types or rolls for multiple dice. 
+I output a nice colorful (and printable) graph of the probability.
 
-## Recommended IDE Setup
+## Technologies
 
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+It's built using [Vue.js](https://vuejs.org/) and [Tailwind](https://tailwindcss.com)
+for styling. I used [Chart.js](https://www.chartjs.org/) for the graph.
+
+
+

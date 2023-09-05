@@ -3,27 +3,71 @@
     <div class="flex flex-col gap-2">
       <steps></steps>
       <form-elements @calculate="calculate"></form-elements>
+      <div class="mx-2 px-4 my-8 print:hidden text-gray-800 text-sm">
+        Thanks for visiting! I hope you enjoyed using my little app. If you have
+        any issues or feature requests, or just really like it,
+        <a href="https://rickhenry.dev/contact" class="underline"
+          >send me a message</a
+        >
+        on my main website, or
+        <a
+          href="https://github.com/rickh94/dice-calculator"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="underline"
+          >check out the code on GitHub</a
+        >
+      </div>
       <app-footer class="mt-32 print:hidden"></app-footer>
     </div>
   </main>
-  <main class="max-w-4xl mx-auto px-4 mt-8 flex-col gap-2" v-else-if="isCalcStage">
-    <div class="bg-white overflow-hidden shadow border border-gray-300 rounded-md my-4 h-100">
-      <div class="px-4 py-5 sm:p-6 flex flex-col justify-center items-center w-full">
+  <main
+    class="max-w-4xl mx-auto px-4 mt-8 flex-col gap-2"
+    v-else-if="isCalcStage"
+  >
+    <div
+      class="bg-white overflow-hidden shadow border border-gray-300 rounded-md my-4 h-100"
+    >
+      <div
+        class="px-4 py-5 sm:p-6 flex flex-col justify-center items-center w-full"
+      >
         <calculator-icon icon-class="m-8 animate-bounce h-40"></calculator-icon>
         <div class="font-bold text-4xl mb-4">Calculating...</div>
       </div>
     </div>
   </main>
-  <main class="max-w-4xl mx-auto px-4 mt-8 flex-col gap-2" v-else-if="isDisplayStage">
-    <div class="bg-white overflow-hidden shadow border border-gray-300 rounded-md my-4 h-100 print:shadow-none print:border-none">
-      <div class="px-4 py-5 sm:p-6 ">
+  <main
+    class="max-w-4xl mx-auto px-4 mt-8 flex-col gap-2"
+    v-else-if="isDisplayStage"
+  >
+    <div
+      class="bg-white overflow-hidden shadow border border-gray-300 rounded-md my-4 h-100 print:shadow-none print:border-none"
+    >
+      <div class="px-4 py-5 sm:p-6">
         <probability-chart :data="diceData"></probability-chart>
       </div>
+    </div>
+    <div class="mx-2 px-4 my-8 print:hidden text-gray-800 text-sm">
+      Thanks for visiting! I hope you enjoyed using my little app. If you have
+      any issues or feature requests, or just really like it,
+      <a href="https://rickhenry.dev/contact" class="underline"
+        >send me a message</a
+      >
+      on my main website, or
+      <a
+        href="https://github.com/rickh94/dice-calculator"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="underline"
+        >check out the code on GitHub</a
+      >
     </div>
     <app-footer class="mt-44 print:hidden"></app-footer>
   </main>
   <main class="max-w-4xl mx-auto px-4 my-8 flex-col gap-2" v-else>
-    <div class="bg-white overflow-hidden shadow border border-gray-300 rounded-md my-4 h-100">
+    <div
+      class="bg-white overflow-hidden shadow border border-gray-300 rounded-md my-4 h-100"
+    >
       Something has gone wrong...
     </div>
   </main>
@@ -35,8 +79,8 @@ import FormElements from "@/components/FormElements.vue";
 import useSteps from "@/store/steps";
 import CalculatorIcon from "@/components/CalculatorIcon.vue";
 import doCalculation from "@/calculations/doCalculation";
-import ProbabilityChart from '@/components/ProbabilityChart.vue';
-import {defineComponent} from "vue";
+import ProbabilityChart from "@/components/ProbabilityChart.vue";
+import { defineComponent } from "vue";
 import AppFooter from "@/components/AppFooter.vue";
 
 export default defineComponent({
@@ -46,11 +90,23 @@ export default defineComponent({
     Steps,
     FormElements,
     CalculatorIcon,
-    ProbabilityChart
+    ProbabilityChart,
   },
   setup() {
-    const { isFormStage, isCalcStage, isDisplayStage, startCalculation, finishCalculation } = useSteps();
-    return { isFormStage, isCalcStage, isDisplayStage, startCalculation, finishCalculation };
+    const {
+      isFormStage,
+      isCalcStage,
+      isDisplayStage,
+      startCalculation,
+      finishCalculation,
+    } = useSteps();
+    return {
+      isFormStage,
+      isCalcStage,
+      isDisplayStage,
+      startCalculation,
+      finishCalculation,
+    };
   },
   data() {
     return {
@@ -67,6 +123,4 @@ export default defineComponent({
 });
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
